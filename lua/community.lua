@@ -8,6 +8,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  -- todo: move these to their own files so i can include configs.
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.programming-language-support.XBase" },
   -- import/override with your plugins folder
