@@ -40,11 +40,17 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "sourcekit", -- add sourcekit here since mason doesnt install it, and its already on my system.
     },
     -- customize language server configuration passed to `vim.lsp.config`
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
     config = {
       -- ["*"] = { capabilities = {} }, -- modify default LSP client settings such as capabilities
+
+      -- need to add the config alongisde the server to set what files it runs with
+      sourcekit = {
+        filetypes = { "swift", "objc", "objcpp" },
+      },
     },
     -- customize how language servers are attached
     handlers = {

@@ -8,8 +8,13 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  -- todo: move these to their own files so i can include configs.
+  -- Python community plugins
+  { import = "astrocommunity.pack.python.base" }, -- python + toml Treesitter, debugpy, venv-selector, neotest-python
+  { import = "astrocommunity.pack.python.ruff" }, -- language server for linting and formatting
+
+  -- IOS/MACOS Swift Programming plugins
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.programming-language-support.XBase" },
+
   -- import/override with your plugins folder
 }
