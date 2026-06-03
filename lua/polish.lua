@@ -34,6 +34,9 @@ vim.keymap.set("n", "<leader>xq", "<cmd>Telescope quickfix<cr>", { desc = "Show 
 vim.keymap.set("n", "<leader>xx", "<cmd>XcodebuildQuickfixLine<cr>", { desc = "Quickfix Line" })
 vim.keymap.set("n", "<leader>xa", "<cmd>XcodebuildCodeActions<cr>", { desc = "Show Code Actions" })
 
+-- keybind to press escape <esc><esc> instead of c-\ c-n in terminal only
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "quick switch to normal mode in terminal" })
+
 -- Misc settings i think would be nice
 local opt = vim.opt -- for conciseness
 
