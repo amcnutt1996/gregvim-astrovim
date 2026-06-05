@@ -1,5 +1,5 @@
 return {
-  load = false,
   "scottmckendry/cyberdream.nvim",
+  enabled = false,
   lazy = false,
 }

@@ -1,5 +1,5 @@
 return {
-  load = false,
   "Shatur/neovim-ayu",
+  enabled = false,
   lazy = false,
 }
