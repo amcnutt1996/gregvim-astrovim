@@ -1,5 +1,5 @@
 return {
   load = false,
-  "Shatur/neovim-ayu",
+  "scottmckendry/cyberdream.nvim",
   lazy = false,
 }
