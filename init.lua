@@ -35,8 +35,9 @@ if vim.g.neovide then
   vim.g.neovide_hide_mouse_when_typing = true
   vim.g.neovide_detatch_on_quit = "always_quit"
   vim.g.neovide_remember_window_size = true
-  vim.g.neovide_cursor_hack = true
+  vim.g.neovide_cursor_hack = false
   vim.g.neovide_highlight_matching_pair = true
   vim.g.neovide_cursor_smooth_blink = true
   vim.g.neovide_cursor_vfx_mode = "torpedo"
+  vim.o.mouse = ""
 end

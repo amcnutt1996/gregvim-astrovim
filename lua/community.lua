@@ -8,9 +8,16 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+
+  -- Neogen for auto documentation
+  { import = "astrocommunity.editing-support.neogen" },
+
   -- Python community plugins
   { import = "astrocommunity.pack.python.base" }, -- python + toml Treesitter, debugpy, venv-selector, neotest-python
-  -- { import = "astrocommunity.pack.python.ruff" }, -- language server for linting and formatting
+  -- { import = "astrocommunity.pack.python.ty" },
+  -- { import = "astrocommunity.pack.python.basedpyright" },
+  -- { import = "astrocommunity.pack.python.black" },
+  { import = "astrocommunity.pack.python.ruff" }, -- language server for linting and formatting
 
   -- IOS/MACOS Swift Programming plugins
   { import = "astrocommunity.pack.swift" },
