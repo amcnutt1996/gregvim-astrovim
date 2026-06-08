@@ -23,9 +23,8 @@ return {
   { import = "astrocommunity.pack.swift" },
   { import = "astrocommunity.programming-language-support.XBase" },
 
-  -- MINIMAP PLUGIN
-  -- { import = "astrocommunity.split-and-window.minimap-vim" },
-  { import = "astrocommunity.split-and-window.neominimap-nvim" },
+  -- Rust Programming plugin
+  { import = "astrocommunity.pack.rust" },
 
   -- import/override with your plugins folder
 }
