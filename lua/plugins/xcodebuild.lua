@@ -23,6 +23,7 @@
 local progress_handle
 
 return {
+  lazy = true,
   "wojciech-kulik/xcodebuild.nvim",
   dependencies = {
     "nvim-telescope/telescope.nvim",
