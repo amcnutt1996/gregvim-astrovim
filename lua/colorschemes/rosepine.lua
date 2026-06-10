@@ -2,7 +2,7 @@ return {
   "rose-pine/neovim",
   lazy = true,
   name = "rose-pine",
-  config = {
+  opts = {
     -- auto, main, moon, dawn
     variant = "main",
     styles = {

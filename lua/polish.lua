@@ -4,8 +4,6 @@
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
--- Disable relative line numbers in editor
-
 -- XcodeBuild Key Bindings
 vim.keymap.set("n", "<leader>X", "<cmd>XcodebuildPicker<cr>", { desc = "Show Xcodebuild Actions" })
 vim.keymap.set("n", "<leader>xf", "<cmd>XcodebuildProjectManager<cr>", { desc = "Show Project Manager Actions" })
@@ -37,8 +35,20 @@ vim.keymap.set("n", "<leader>xa", "<cmd>XcodebuildCodeActions<cr>", { desc = "Sh
 -- keybind to press escape <esc><esc> instead of c-\ c-n in terminal only
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "quick switch to normal mode in terminal" })
 
+--snacks picker keybinding
+vim.keymap.set("n", "<leader>ui", function() require("snacks.picker").icons() end, { desc = "Icon Picker" })
+vim.keymap.set(
+  "n",
+  "<leader>N",
+  function() require("snacks.notifier").show_history() end,
+  { desc = "Show Nofitication History" }
+)
+
 -- Misc settings i think would be nice
 local opt = vim.opt -- for conciseness
+
+-- mouse disable
+vim.opt.mouse = ""
 
 opt.exrc = true
 opt.secure = true
