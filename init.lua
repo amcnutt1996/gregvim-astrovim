@@ -26,6 +26,8 @@ end
 require "lazy_setup"
 require "polish"
 
+vim.opt.mouse = ""
+
 -- Neovide Settings Below
 if vim.g.neovide then
   vim.o.guifont = "Monaspace Neon NF:h14"
