@@ -37,6 +37,8 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "quick switch to norma
 
 --snacks picker keybinding
 vim.keymap.set("n", "<leader>ui", function() require("snacks.picker").icons() end, { desc = "Icon Picker" })
+
+--Show all prior notification history
 vim.keymap.set(
   "n",
   "<leader>N",
@@ -44,11 +46,14 @@ vim.keymap.set(
   { desc = "Show Nofitication History" }
 )
 
+-- Bafa buffer editor keybind
+vim.keymap.set("n", "<leader>B", require("bafa").toggle, { desc = "Toggle Bafa Buffer Manager" })
+
+-- disable mouse input
+vim.opt.mouse = ""
+
 -- Misc settings i think would be nice
 local opt = vim.opt -- for conciseness
-
--- mouse disable
-vim.opt.mouse = ""
 
 opt.exrc = true
 opt.secure = true
@@ -93,4 +98,4 @@ opt.clipboard:append "unnamedplus" -- use system clipboard as default register
 -- opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
-opt.swapfile = false
+-- opt.swapfile = false

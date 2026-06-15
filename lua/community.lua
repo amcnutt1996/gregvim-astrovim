@@ -12,6 +12,19 @@ return {
   -- Neogen for auto documentation
   { import = "astrocommunity.editing-support.neogen" },
 
+  -- Community plugins for Markdown and Obsidian(images)
+  -- The core language stack (Auto-installs Marksman and Markdownlint via Mason)
+  { import = "astrocommunity.pack.markdown" },
+
+  -- The formatter (Auto-installs Prettier via Mason)
+  { import = "astrocommunity.pack.prettier" },
+
+  -- Visuals (Clean UI)
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
+  -- Obsidian integration (Wiki-links)
+  { import = "astrocommunity.note-taking.obsidian-nvim" },
+
   -- Python community plugins
   { import = "astrocommunity.pack.python.base" }, -- python + toml Treesitter, debugpy, venv-selector, neotest-python
   -- { import = "astrocommunity.pack.python.ty" },

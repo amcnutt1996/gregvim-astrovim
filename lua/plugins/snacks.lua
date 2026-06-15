@@ -26,10 +26,12 @@ return {
           },
           { icon = "󰦛 ", key = "s", desc = "Restore Session", section = "session" },
           { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
+
+          -- Custom locations: feel free to change if you want.
           {
             icon = " ",
-            key = "o",
-            desc = "Change Dir To Obsidian",
+            key = "m",
+            desc = "MD Notes Directory",
             action = function()
               vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs/Greg-2026/"
               vim.cmd "Neotree focus"
@@ -38,7 +40,7 @@ return {
           {
             icon = " ",
             key = "C",
-            desc = "Change Dir To Cloud Drive",
+            desc = "Cloud Drive",
             action = function()
               vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs/"
               vim.cmd "Neotree focus"
@@ -53,8 +55,8 @@ return {
               vim.cmd "Neotree focus"
             end,
           },
+          -- end custom dashboard hotkeys/locations
 
-          -- /Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs
           { icon = "󰩈 ", key = "q", desc = "Quit", action = ":qa" },
         },
       },
