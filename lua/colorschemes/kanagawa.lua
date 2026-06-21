@@ -1,9 +1,8 @@
 return {
   "rebelot/kanagawa.nvim",
   opts = {
-    background = {
-      dark = "dragon",
-    },
+    -- background = {
+    --   dark = "dragon",
+    -- },
   },
-  lazy = true,
 }

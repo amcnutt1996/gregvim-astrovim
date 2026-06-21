@@ -25,18 +25,3 @@ end
 
 require "lazy_setup"
 require "polish"
-
--- Neovide Settings Below
-if vim.g.neovide then
-  vim.o.guifont = "Monaspace Neon NF:h14"
-  vim.g.neovide_refresh_rate = 60
-  vim.g.neovide_refresh_rate_idle = 5
-  vim.opt.linespace = 5
-  vim.g.neovide_hide_mouse_when_typing = true
-  vim.g.neovide_detatch_on_quit = "always_quit"
-  vim.g.neovide_remember_window_size = true
-  vim.g.neovide_cursor_hack = false
-  vim.g.neovide_highlight_matching_pair = true
-  vim.g.neovide_cursor_smooth_blink = true
-  vim.g.neovide_cursor_vfx_mode = "torpedo"
-end

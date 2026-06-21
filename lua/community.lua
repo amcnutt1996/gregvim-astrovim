@@ -16,8 +16,8 @@ return {
   -- The core language stack (Auto-installs Marksman and Markdownlint via Mason)
   { import = "astrocommunity.pack.markdown" },
 
-  -- The formatter (Auto-installs Prettier via Mason)
-  { import = "astrocommunity.pack.prettier" },
+  -- -- The formatter (Auto-installs Prettier via Mason)
+  -- { import = "astrocommunity.pack.prettier" },
 
   -- Visuals (Clean UI)
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
@@ -30,7 +30,7 @@ return {
   -- { import = "astrocommunity.pack.python.ty" },
   -- { import = "astrocommunity.pack.python.basedpyright" },
   -- { import = "astrocommunity.pack.python.black" },
-  { import = "astrocommunity.pack.python.ruff" }, -- language server for linting and formatting
+  -- { import = "astrocommunity.pack.python.ruff" }, -- language server for linting and formatting
 
   -- IOS/MACOS Swift Programming plugins
   { import = "astrocommunity.pack.swift" },

@@ -28,12 +28,22 @@ return {
           { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
 
           -- Custom locations: feel free to change if you want.
+
+          {
+            icon = "󰝰 ",
+            key = "D",
+            desc = "Documents Directory",
+            action = function()
+              vim.fn.chdir "/Users/gmcnutt/Documents/"
+              vim.cmd "Neotree focus"
+            end,
+          },
           {
             icon = " ",
-            key = "m",
+            key = "M",
             desc = "MD Notes Directory",
             action = function()
-              vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs/Greg-2026/"
+              vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/iCloud~md~obsidian/Documents/Greg2026"
               vim.cmd "Neotree focus"
             end,
           },
@@ -48,7 +58,7 @@ return {
           },
           {
             icon = "󱆀 ",
-            key = "s",
+            key = "S",
             desc = "Change Dir To School",
             action = function()
               vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs/School/"

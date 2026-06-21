@@ -94,8 +94,23 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 opt.clipboard:append "unnamedplus" -- use system clipboard as default register
 
 -- split windows
--- opt.splitright = true -- split vertical window to the right
--- opt.splitbelow = true -- split horizontal window to the bottom
+opt.splitright = true -- split vertical window to the right
+opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
--- opt.swapfile = false
+opt.swapfile = false
+
+-- Neovide Settings Below
+if vim.g.neovide then
+  vim.o.guifont = "Monaspace Neon NF:h14"
+  vim.g.neovide_refresh_rate = 60
+  vim.g.neovide_refresh_rate_idle = 5
+  vim.opt.linespace = 5
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_detatch_on_quit = "always_quit"
+  vim.g.neovide_remember_window_size = true
+  vim.g.neovide_cursor_hack = false
+  vim.g.neovide_highlight_matching_pair = true
+  vim.g.neovide_cursor_smooth_blink = true
+  vim.g.neovide_cursor_vfx_mode = "torpedo"
+end
