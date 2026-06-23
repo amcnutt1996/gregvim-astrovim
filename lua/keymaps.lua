@@ -13,7 +13,10 @@ vim.keymap.set(
 )
 
 -- Bafa buffer editor keybind
-vim.keymap.set("n", "<leader>B", require("bafa").toggle, { desc = "Toggle Bafa Buffer Manager" })
+vim.keymap.set("n", "<leader>B", function() require("bafa").toggle() end, { desc = "Toggle Bafa Buffer Manager" })
+
+-- disable the q: becasue i keep accidentally hitting it
+vim.keymap.set("n", "q:", "nop")
 
 -- XcodeBuild Key Bindings
 vim.keymap.set("n", "<leader>X", "<cmd>XcodebuildPicker<cr>", { desc = "Show Xcodebuild Actions" })
