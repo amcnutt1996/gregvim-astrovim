@@ -7,7 +7,7 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrolsp",
+  "https://github.com/AstroNvim/astrolsp",
   ---@type AstroLSPOpts
   opts = {
     -- Configuration table of features provided by AstroLSP
