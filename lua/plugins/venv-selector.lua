@@ -1,5 +1,5 @@
 return {
-  "linux-cultist/venv-selector.nvim",
+  "https://github.com/linux-cultist/venv-selector.nvim",
   enabled = true,
   dependencies = {
     "nvim-telescope/telescope.nvim",

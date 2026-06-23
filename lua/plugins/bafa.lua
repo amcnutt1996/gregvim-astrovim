@@ -1,4 +1,4 @@
 return {
-  "mistweaverco/bafa.nvim",
+  "https://github.com/mistweaverco/bafa.nvim",
   opts = {},
 }

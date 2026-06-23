@@ -1,5 +1,5 @@
 return {
-  "folke/which-key.nvim",
+  "https://github.com/folke/which-key.nvim",
   opts = {
     filter = function() return true end,
     sort = { "alphanum", "mod" },

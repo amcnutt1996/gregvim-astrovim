@@ -1,5 +1,5 @@
 return {
-  "MeanderingProgrammer/render-markdown.nvim",
+  "https://github.com/MeanderingProgrammer/render-markdown.nvim",
   opts = {
     render_modes = true,
     anti_conceal = {

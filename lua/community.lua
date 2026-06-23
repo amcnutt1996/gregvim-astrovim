@@ -6,7 +6,7 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
+  "https://github.com/AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
 
   -- Neogen for auto documentation

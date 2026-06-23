@@ -1,5 +1,5 @@
 return {
-  "epwalsh/obsidian.nvim",
+  "https://github.com/epwalsh/obsidian.nvim",
   opts = {
     -- ui = { enable = false },
     workspaces = {

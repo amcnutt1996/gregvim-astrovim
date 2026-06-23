@@ -1,5 +1,5 @@
 return {
-  "saghen/blink.cmp",
+  "https://github.com/saghen/blink.cmp",
   dependencies = {
     "rafamadriz/friendly-snippets",
     "echasnovski/mini.icons",

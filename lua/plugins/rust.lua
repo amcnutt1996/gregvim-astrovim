@@ -1,1 +1,1 @@
-return { "rust-lang/rust.vim" }
+return { "https://github.com/rust-lang/rust.vim" }

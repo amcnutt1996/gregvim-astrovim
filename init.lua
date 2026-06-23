@@ -23,8 +23,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
-require("vim._core.ui2").enable {
-  enable = true,
-}
+-- require("vim._core.ui2").enable {
+--   enable = true,
+-- }
 require "lazy_setup"
 require "polish"

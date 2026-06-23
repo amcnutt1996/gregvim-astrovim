@@ -1,5 +1,5 @@
 return {
-  "folke/snacks.nvim",
+  "https://github.com/folke/snacks.nvim",
   opts = {
     dashboard = {
       preset = {

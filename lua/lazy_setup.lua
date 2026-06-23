@@ -1,6 +1,6 @@
 require("lazy").setup({
   {
-    "AstroNvim/AstroNvim",
+    "https://github.com/AstroNvim/AstroNvim",
     version = "^6", -- Remove version tracking to elect for nightly AstroNvim
     import = "astronvim.plugins",
     opts = { -- AstroNvim options must be set here with the `import` key

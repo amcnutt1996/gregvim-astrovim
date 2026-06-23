@@ -1,5 +1,5 @@
 return {
-  "akinsho/toggleterm.nvim",
+  "https://github.com/akinsho/toggleterm.nvim",
   keys = {
     { "<F13>", "<cmd>ToggleTerm<cr>", desc = "Toggle Terminal", mode = { "n", "i", "t" } },
   },
