@@ -1,3 +1,4 @@
+-- Set Color Scheme in This FILE
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
 -- Highly recommended to set up the Lua Language Server (`:LspInstall lua_ls`)
@@ -9,7 +10,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    colorscheme = "tokyonight-moon",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes

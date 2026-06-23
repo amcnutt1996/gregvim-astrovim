@@ -58,7 +58,7 @@ return {
           },
           {
             icon = " ",
-            key = "C",
+            key = "X",
             desc = "Cloud Drive",
             action = function()
               vim.fn.chdir "/Users/gmcnutt/Library/Mobile Documents/com~apple~CloudDocs/"
