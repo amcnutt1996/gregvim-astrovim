@@ -28,6 +28,15 @@ return {
           { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
 
           -- Custom locations: feel free to change if you want.
+          {
+            icon = " ",
+            key = "C",
+            desc = "NVIM Config Directory",
+            action = function()
+              vim.fn.chdir "/Users/gmcnutt/.config/nvim/"
+              vim.cmd "Neotree focus"
+            end,
+          },
 
           {
             icon = "󰝰 ",
