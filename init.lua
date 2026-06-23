@@ -27,4 +27,5 @@ end
 --   enable = true,
 -- }
 require "lazy_setup"
-require "polish"
+require "nvim_configs"
+require "keymaps"
