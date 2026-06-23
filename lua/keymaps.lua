@@ -15,8 +15,14 @@ vim.keymap.set(
 -- Bafa buffer editor keybind
 vim.keymap.set("n", "<leader>B", function() require("bafa").toggle() end, { desc = "Toggle Bafa Buffer Manager" })
 
+-- enable prev/next buffer movement with H and L
+vim.keymap.set("n", "H", "<cmd>:bprev<cr>", { desc = "Prev Buffer" })
+vim.keymap.set("n", "L", "<cmd>:bnext<cr>", { desc = "Next Buffer" })
+
 -- disable the q: becasue i keep accidentally hitting it
-vim.keymap.set("n", "q:", "nop")
+vim.keymap.set("n", "q:", ":")
+-- disable S-j because i accidentally hit that too
+vim.keymap.set("n", "J", "")
 
 -- XcodeBuild Key Bindings
 vim.keymap.set("n", "<leader>X", "<cmd>XcodebuildPicker<cr>", { desc = "Show Xcodebuild Actions" })
