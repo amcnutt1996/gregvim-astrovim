@@ -1,7 +1,7 @@
 -- This will run last in the setup process.
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
-vim.cmd.colorscheme "material-oceanic"
+vim.cmd.colorscheme "gruvbox"
 -- disable mouse input
 vim.o.mouse = ""
 
@@ -17,7 +17,7 @@ vim.o.shiftwidth = 2 -- 2 spaces for indent width
 vim.o.autoindent = true -- copy indent from current line when starting new one
 
 -- cmd line height at bottom
-vim.o.cmdheight = 0
+vim.o.cmdheight = 1
 
 -- line wrapping
 vim.o.wrap = false -- enable line wrapping

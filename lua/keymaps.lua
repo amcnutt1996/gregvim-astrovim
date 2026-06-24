@@ -4,6 +4,9 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "quick switch to norma
 --snacks picker keybinding
 vim.keymap.set("n", "<leader>ui", function() require("snacks.picker").icons() end, { desc = "Icon Picker" })
 
+-- open themery theme picker
+vim.keymap.set("n", "<leader>ut", "<cmd>Themery<cr>", { desc = "Theme Picker" })
+
 --Show all prior notification history
 vim.keymap.set(
   "n",
