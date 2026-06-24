@@ -1,5 +1,5 @@
 return {
-  "https://github.com/saghen/blink.cmp",
+  "saghen/blink.cmp",
   dependencies = {
     "rafamadriz/friendly-snippets",
     "echasnovski/mini.icons",
@@ -14,7 +14,8 @@ return {
       ["<C-h>"] = {
         function(cmp) cmp.show_documentation() end,
       },
-      ["<tab>"] = {},
+      ["<Tab>"] = { "select_next", "fallback" },
+      ["<S-Tab>"] = { "select_prev", "fallback" },
     },
     signature = { enabled = false },
     appearance = {

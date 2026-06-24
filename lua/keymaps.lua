@@ -12,6 +12,9 @@ vim.keymap.set(
   { desc = "Show Nofitication History" }
 )
 
+-- toggle claude code in terminal to right
+-- vim.keymap.set("n", "<leader>\\", "<cmd>ClaudeCode<cr>", { desc = "Toggle Claude Code" })
+
 -- Bafa buffer editor keybind
 vim.keymap.set("n", "<leader>B", function() require("bafa").toggle() end, { desc = "Toggle Bafa Buffer Manager" })
 

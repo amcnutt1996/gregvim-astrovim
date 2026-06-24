@@ -28,4 +28,4 @@ require("vim._core.ui2").enable {
 }
 require "lazy_setup"
 require "keymaps"
-require "nvim_configs"
+require "nvim_config"

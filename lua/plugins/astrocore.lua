@@ -37,6 +37,15 @@ return {
       --   [".*/etc/foo/.*"] = "fooscript",
       -- },
     },
+    -- autocmds = {
+    --   hide_claude_buffer = {
+    --     {
+    --       event = "TermOpen",
+    --       pattern = "*claude*",
+    --       callback = function() vim.opt_local.buflisted = false end,
+    --     },
+    --   },
+    -- },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
